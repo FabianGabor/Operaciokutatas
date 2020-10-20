@@ -1,0 +1,19 @@
+Model:
+SETS:
+Cols /1..3/: p_coeff,x;
+Rows /1..3/: RHS;
+Matrix(Rows,Cols):a_matrix;
+endsets
+!Objective function;
+[Celfugg] Max = @Sum(Cols(j) : p_coeff(j) * x(j));
+!Subject to;
+@for(Rows(i):
+	@Sum(Cols(j):a_matrix(i,j) * x(j)) <= RHS(i)
+);
+Data:
+p_coeff = @OLE('/home/dirtyred/Documents/Coding/Operaciokutatas/OLE.xls');
+RHS = @OLE('/home/dirtyred/Documents/Coding/Operaciokutatas/OLE.xls');
+a_matrix = @OLE('/home/dirtyred/Documents/Coding/Operaciokutatas/OLE.xls');
+@OLE('/home/dirtyred/Documents/Coding/Operaciokutatas/OLE.xls', megoldas) = x;
+enddata
+end
