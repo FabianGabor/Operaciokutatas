@@ -1,0 +1,9 @@
+MODEL:
+!feltetelek;
+[Px] MIN= 50 * y1 - 40 * y2 + 22 * y3;
+!feltetelek;
+[X1] - 2 * y1 - 25 * y2 + 7 * y3 >= - 3;
+[X2] 4 * y1 + 3 * y2 - y3 = - 4;
+[X3] - y1 - 2 * y2 + 6 * y3 >= 6;
+@FREE(y3);
+END

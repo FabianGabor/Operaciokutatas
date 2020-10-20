@@ -1,0 +1,22 @@
+Model:
+Sets:
+Rows/1..3/:b;
+Cols/1..3/:x;
+Matrix(Rows, Cols):a;
+endsets
+
+@for( Cols(j):@free(x(j)) );
+
+@for(Matrix: a*x=b;);
+
+Data:
+a = 
+	1,3,-4,
+	-3,7,4,
+	7,-9,1;
+b = 125,100,-25;
+enddata
+
+
+
+end

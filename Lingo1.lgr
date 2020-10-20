@@ -1,0 +1,31 @@
+  Global optimal solution found.
+  Objective value:                              3921.429
+  Infeasibilities:                              0.000000
+  Total solver iterations:                             2
+  Elapsed runtime seconds:                          0.02
+
+  Model Class:                                        LP
+
+  Total variables:                      4
+  Nonlinear variables:                  0
+  Integer variables:                    0
+
+  Total constraints:                    3
+  Nonlinear constraints:                0
+
+  Total nonzeros:                      12
+  Nonlinear nonzeros:                   0
+
+
+
+                                Variable           Value        Reduced Cost
+                                 HOKEDLI        0.000000            6.000000
+                                    SZEK        0.000000            4.428571
+                             KONYVESPOLC        32.14286            0.000000
+                                      TV        139.2857            0.000000
+
+                                     Row    Slack or Surplus      Dual Price
+                                  PROFIT        3921.429            1.000000
+                                MUNKAERO        0.000000            2.142857
+                                RAGASZTO        0.000000            5.142857
+

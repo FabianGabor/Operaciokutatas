@@ -1,0 +1,7 @@
+Model:
+!Celfuggveny;
+[Profit] Max = 12*hokedli+8*szek+18*konyvespolc+24*TV;
+!feltetelek;
+[Munkaero] 6*hokedli + 1*szek + 6*konyvespolc + 4*TV <= 750;
+[Ragaszto] 1*hokedli + 2*szek + 1*konyvespolc + 3*TV <= 450;
+end

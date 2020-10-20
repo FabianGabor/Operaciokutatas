@@ -1,0 +1,23 @@
+Model:
+sets:
+rows /1..4/:b;
+cols /1..4/:x;
+matrix(rows,cols):a;
+
+L(rows,cols):L;
+U(rows,cols):U;
+endsets
+
+@for(matrix: a*x=b;);
+
+data:
+a=
+2	3	4	5,
+-2	-3	3	5,
+-4	2	3	7,
+8	9	5	3;
+
+b=125,100,-25,50;
+
+enddata;
+end

@@ -1,0 +1,9 @@
+Model:
+!Celfuggveny;
+[Px] Max = -3*x1 - 4*x2 + 6*x3;
+!feltetelek;
+-2*x1 + 4*x2 - x3 <= 50;
+-25*x1 + 3*x2 - 2*x3 <= -40;
+7*x1 - x2 + 6*x3 = 22;
+@free(x2);
+end

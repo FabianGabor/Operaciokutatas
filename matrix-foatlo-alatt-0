@@ -1,0 +1,10 @@
+Model:
+Sets:
+Rows/1..4/:b;
+Cols/1..4/:x;
+Matrix(Rows, Cols):a;
+endsets
+
+@for (rows(i):
+    @for(cols(j) | i#GT#j: a(i,j) = 0; );
+);
