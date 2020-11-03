@@ -1,0 +1,26 @@
+Model:
+sets:
+Raktar /R1, R2, R3, R4/		:	Keszlet;
+Bolt /B1,B2,B3,B4,B5/		:	Igeny;
+Ut(Raktar,Bolt)			:	Koltseg, x;
+endsets
+
+[Kgt] Min = @Sum(Ut : Koltseg * x);
+
+@for(Raktar(i):
+	[Raktar_] @Sum(Bolt(j) : x(i,j)) <= Keszlet(i);
+);
+@for(Bolt(j):
+	[Bolt_] @Sum(Raktar(i) : x(i,j)) >= Igeny(j);
+);
+
+data:
+Igeny = 100, 100, 150, 150, 100;
+Keszlet = 150, 150, 200, 100;
+Koltseg =
+	3	5	2	4	6
+	8	2	6	1	2
+	2	3	1	5	2
+	9	4	2	1	6;
+enddata;
+end
